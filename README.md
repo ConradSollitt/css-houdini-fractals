@@ -2,6 +2,12 @@
 
 Drawing Fractals with CSS Houdini. 
 
+## 🌐 Try it online!
+
+https://conradsollitt.github.io/css-houdini-fractals/
+
+## 🚀 Download locally
+
 This repository has zero dependencies. Only the [fractals.js](fractals.js) file is required us it. If you would like to try the demo locally download this repository and follow the commands below.
 
 ```bash
@@ -18,7 +24,7 @@ python -m SimpleHTTPServer
 
 <img src="css-houdini-fractals.png" alt="CSS Houdini Fractals">
 
-## Usage
+## 💡 Usage
 
 The type HTML element does not matter, rather a height and width are needed.
 
@@ -52,19 +58,19 @@ The type HTML element does not matter, rather a height and width are needed.
 }
 ```
 
-## CSS Houdini Links
+## 🎨 CSS Houdini Links
 
 * https://houdini.how/
 * https://github.com/GoogleChromeLabs/houdini.how
 * https://developer.mozilla.org/en-US/docs/Web/Houdini
 
-## Fractals
+## ❄️ Fractals
 
 * https://fractalfoundation.org/resources/what-are-fractals/
 * https://en.wikipedia.org/wiki/
 * https://mathworld.wolfram.com/Fractal.html
 * https://www.wired.com/2010/09/fractal-patterns-in-nature/
 
-# License
+## 📝 License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
