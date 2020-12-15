@@ -54,7 +54,7 @@ The type HTML element does not matter, rather a height and width are needed.
     --next-line-size: 0.8;
     --max-draw-count: 100000;
     --debug-to-console: 1;
-	background-image: paint(fractals);
+    background-image: paint(fractals);
 }
 ```
 
