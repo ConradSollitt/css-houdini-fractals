@@ -1,0 +1,22 @@
+{
+  "name": "css-houdini-fractals",
+  "version": "1.0.0",
+  "description": "Fractals Drawing with CSS Houdini",
+  "main": "fractals.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConradSollitt/css-houdini-fractals.git"
+  },
+  "keywords": [
+    "CSS",
+    "Houdini",
+    "Fractals"
+  ],
+  "author": "Conrad Sollitt (https://conradsollitt.com)",
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/ConradSollitt/css-houdini-fractals"
+}

@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(180deg, hsl(0 0% 100% / 0.2) 1%, hsl(0 0% 100% / 0.2) 30%,#fff),
+        linear-gradient(25deg, #ce084b, #017bdc 32%,#FFEB3B);
+}
+
+h1, section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+/*
+    For more on how the <h1> works see my personal site and the CSS source:
+        https://conradsollitt.com/
+*/
+h1 { font-size:3em; letter-spacing: 0.08em; }
+h1 span { --h: 0; --s: 100%; --l: 50%; }
+h1 span:nth-child(2n) { --h: 120; }
+h1 span:nth-child(3n) { --h: 240; }
+h1 span:nth-child(4n) { --h: 60; }
+h1 span {
+    color: hsl(var(--h), var(--s), var(--l));
+    --darkest: calc(var(--l) - 30%);
+    --outline: hsl(var(--h), var(--s), var(--darkest));
+    text-shadow:
+        -1px -1px      var(--outline),
+        1px -1px       var(--outline),
+        -1px 1px       var(--outline),
+        1px 1px        var(--outline);
+}
+
+.flex { display:flex; flex-wrap: wrap; }
+.center { justify-content: center; }
+
+section > div { display: flex; padding: 10px; }
+
+label { margin-right: 60px; width:150px; color: #888; }
+select,
+input[type="text"],
+input[type="number"] { padding:.5em 1em; }
+input { position: relative; }
+input::before {
+    position: absolute;
+    content: attr(current-value);
+    left: -40px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.demo {
+    width: 50vw;
+    height: 50vh;
+}
+
+/*
+    By default only `background-image: paint(fractals)` is needed.
+
+    Example below shows all options with default values, except for:
+        --colors: {Not set}
+        --debug-to-console: 0
+
+    [--colors] are dynamic and based on the number of colors included.
+*/
+.fractals {
+    /* --colors: red green blue; */
+    --colors: red green blue cyan magenta yellow;
+    --angle: 30;
+    --starting-length-percent: 22;
+    --next-line-size: 0.8;
+    --max-draw-count: 100000;
+    --debug-to-console: 1;
+	background-image: paint(fractals);
+}
