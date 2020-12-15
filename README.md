@@ -8,15 +8,14 @@ https://conradsollitt.github.io/css-houdini-fractals/
 
 ## 🚀 Download locally
 
-This repository has zero dependencies. Only the [fractals.js](fractals.js) file is required us it. If you would like to try the demo locally download this repository and follow the commands below.
+This repository has zero dependencies. Only the [fractals.js](fractals.js) file is required to use it with any site. If you would like to try the demo locally download this repository and follow the commands below.
 
 ```bash
 # If you have node installed:
 npm start
 
-# If you do not have node installed and have python installed
-# then depending on the version Python installed and the OS
-# one of the following commands should work:
+# If you do not have node installed and have Python installed then depending on
+# the version Python and OS installed one of the following commands should work:
 python3 -m http.server
 python -m http.server
 python -m SimpleHTTPServer
@@ -26,7 +25,7 @@ python -m SimpleHTTPServer
 
 ## 💡 Usage
 
-The type HTML element does not matter, rather a height and width are needed.
+The type of HTML element does not matter, rather a height and width are needed.
 
 ```html
 <style>
