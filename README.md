@@ -44,9 +44,12 @@ The type of HTML element does not matter, rather a height and width are needed.
         --debug-to-console: 0
 
     [--colors] are dynamic and based on the number of colors included.
+    The delimiter for [--colors] is a space so these examples are all valid:
+        --colors: red green blue;
+        --colors: black;
+        --colors: #000 #222 #444 #666 #888 #aaa #ccc;
 */
 .fractals {
-    /* --colors: red green blue; */
     --colors: red green blue cyan magenta yellow;
     --angle: 30;
     --starting-length-percent: 22; 
