@@ -122,5 +122,5 @@ a[href^="https://github.com/"]::before {
     --next-line-size: 0.8;
     --max-draw-count: 10000;
     --debug-to-console: 1;
-	background-image: paint(fractals);
+    background-image: paint(fractals);
 }
