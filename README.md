@@ -21,7 +21,13 @@ python -m http.server
 python -m SimpleHTTPServer
 ```
 
-<img src="css-houdini-fractals.png" alt="CSS Houdini Fractals">
+<img src="img/css-houdini-fractals.png" alt="CSS Houdini Fractals">
+
+<img src="img/fractals-1.png" alt="CSS Houdini Fractals">
+
+<img src="img/fractals-2.png" alt="CSS Houdini Fractals">
+
+<img src="img/fractals-3.png" alt="CSS Houdini Fractals">
 
 ## 💡 Usage
 
