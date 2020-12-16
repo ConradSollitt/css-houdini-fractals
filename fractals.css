@@ -12,6 +12,8 @@ body {
     align-items: center;
     background-image: linear-gradient(180deg, hsl(0 0% 100% / 0.2) 1%, hsl(0 0% 100% / 0.2) 30%,#fff),
         linear-gradient(25deg, #ce084b, #017bdc 32%,#FFEB3B);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, section {
@@ -41,7 +43,7 @@ h1 span {
         1px 1px        var(--outline);
 }
 
-.flex { display:flex; flex-wrap: wrap; }
+.flex { display:flex; flex-wrap: wrap; justify-content: center; }
 .center { justify-content: center; }
 
 section > div { display: flex; padding: 10px; }
@@ -61,8 +63,14 @@ input::before {
 }
 
 .demo {
-    width: 50vw;
+    width: 100%;
     height: 50vh;
+}
+@media (min-width: 800px) {
+    .demo { width:600px; }
+}
+@media (min-width: 1200px) {
+    .demo { width:50vw; }
 }
 
 /*
