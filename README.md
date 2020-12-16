@@ -1,6 +1,6 @@
 # CSS Houdini Fractals
 
-Drawing Fractals with CSS Houdini. 
+Drawing Fractals with CSS Houdini.
 
 ## 🌐 Try it online!
 
@@ -31,7 +31,38 @@ python -m SimpleHTTPServer
 
 ## 💡 Usage
 
-The type of HTML element does not matter, rather a height and width are needed.
+### Use CSS Houdini API to import the [fractals.js](fractals.js) file
+
+```js
+// Modern Browsers - Import JavaScript file from CDN
+if ('paintWorklet' in CSS) {
+    CSS.paintWorklet.addModule('https://unpkg.com/css-houdini-fractals@1.0.0/fractals.js');
+}
+
+// Modern Browsers - Using Local build, only a single file is needed
+if ('paintWorklet' in CSS) {
+    CSS.paintWorklet.addModule('fractals.js');
+}
+```
+
+### Use the [css-paint-polyfill] Polyfill to support all Modern Browsers (won't work with IE)
+
+https://github.com/GoogleChromeLabs/css-paint-polyfill
+
+```html
+<script type="module">
+    (async function () {
+        if (CSS['paintWorklet'] === undefined) {
+            await import('https://unpkg.com/css-paint-polyfill');
+        }
+        CSS.paintWorklet.addModule('fractals.js');
+    })();
+</script>
+```
+
+### HTML
+
+The type of HTML element and class name does not matter, rather height and width are needed.
 
 ```html
 <style>
@@ -41,10 +72,17 @@ The type of HTML element does not matter, rather a height and width are needed.
 <section class="fractals"></section>
 ```
 
+### CSS Options
+
 ```css
 /*
     By default only `background-image: paint(fractals)` is needed.
+*/
+.fractals {
+    background-image: paint(fractals);
+}
 
+/*
     The example below shows all options with default values, except for:
         --colors: {Not set}
         --debug-to-console: 0
@@ -58,7 +96,7 @@ The type of HTML element does not matter, rather a height and width are needed.
 .fractals {
     --colors: red green blue cyan magenta yellow;
     --angle: 30;
-    --starting-length-percent: 22; 
+    --starting-length-percent: 22;
     --next-line-size: 0.8;
     --max-draw-count: 100000;
     --debug-to-console: 1;
