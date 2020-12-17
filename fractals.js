@@ -82,7 +82,6 @@ class Fractals {
         this.colorCount = this.colors.length;
 
         // Function for type Shape to Draw - Defaults to line.
-        // Default (x, y) coordinates based on type of shape.
         let shape;
         const x = (size.width / 2);
         const y = size.height - (this.showOrigin ? 4 : 0);
