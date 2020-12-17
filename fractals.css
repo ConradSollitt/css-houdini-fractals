@@ -29,7 +29,7 @@ section { max-width: calc(100vw - 80px); }
     For more on how the <h1> works see my personal site and the CSS source:
         https://conradsollitt.com/
 */
-h1 { font-size:3em; letter-spacing: 0.08em; }
+h1 { font-size:3em; letter-spacing: 0.08em; text-align: center; }
 h1 span { --h: 0; --s: 100%; --l: 50%; }
 h1 span:nth-child(2n) { --h: 120; }
 h1 span:nth-child(3n) { --h: 240; }
