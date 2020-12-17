@@ -23,6 +23,14 @@
                 </select>
             </div>
             <div>
+                <label>Shape</label>
+                <select id="shape">
+                    <option value="line" selected>line</option>
+                    <option value="circle">circle</option>
+                    <option value="square">square</option>
+                </select>
+            </div>
+            <div>
                 <label>Angle</label>
                 <input id="angle" type="range" min="0" max="360" value="30">
             </div>
@@ -39,10 +47,17 @@
                 <input id="max-draw-count" type="range" min="0" max="50000" step="1000" value="10000">
             </div>
             <div>
+                <label>Show Origin</label>
+                <select id="show-origin">
+                    <option value="1">Yes</option>
+                    <option value="0" selected>No</option>
+                </select>
+            </div>
+            <div>
                 <label>Debug to Console</label>
                 <select id="debug-to-console">
-                    <option value="1" selected>Yes</option>
-                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                    <option value="0" selected>No</option>
                 </select>
             </div>
             <div class="center">

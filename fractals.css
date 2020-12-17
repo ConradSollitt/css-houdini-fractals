@@ -108,19 +108,21 @@ a[href^="https://github.com/"]::before {
 /*
     By default only `background-image: paint(fractals)` is needed.
 
-    Example below shows all options with default values, except for:
-        --colors: {Not set}
-        --debug-to-console: 0
-        --max-draw-count: 100000
+    The example below shows all options with default values, except
+    for [--colors] which is empty resulting in black lines.
 
     [--colors] are dynamic and based on the number of colors included.
+    [--shape] = One of [line, circle, square]
+    [--debug-to-console] and [-show-origin] = 0 or 1
 */
 .fractals {
     --colors: red green blue cyan magenta yellow;
     --angle: 30;
     --starting-length-percent: 22;
     --next-line-size: 0.8;
+    --shape: line;
     --max-draw-count: 10000;
-    --debug-to-console: 1;
+    --debug-to-console: 0;
+    --show-origin: 0;
     background-image: paint(fractals);
 }

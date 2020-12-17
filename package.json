@@ -1,6 +1,6 @@
 {
   "name": "css-houdini-fractals",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Fractals Drawing with CSS Houdini",
   "main": "fractals.js",
   "scripts": {
