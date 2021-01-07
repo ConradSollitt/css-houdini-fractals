@@ -1,6 +1,6 @@
 # CSS Houdini Fractals
 
-Drawing Fractals with CSS Houdini.
+Drawing Fractals with CSS Houdini. This demo was created for https://github.com/GoogleChromeLabs/houdini.how
 
 ## 🌐 Try it online!
 
