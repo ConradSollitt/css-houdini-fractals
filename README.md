@@ -1,6 +1,11 @@
 # CSS Houdini Fractals
 
-Drawing Fractals with CSS Houdini. This demo was created for https://github.com/GoogleChromeLabs/houdini.how
+Drawing Fractals with CSS Houdini.
+
+This demo was created for https://github.com/GoogleChromeLabs/houdini.how and can be also previewed on the main Chrome Labs site https://houdini.how/
+
+**From:** https://developer.mozilla.org/en-US/docs/Web/Houdini
+> Houdini is a set of low-level APIs that exposes parts of the CSS engine, giving developers the power to extend CSS by hooking into the styling and layout process of a browser’s rendering engine.
 
 ## 🌐 Try it online!
 
