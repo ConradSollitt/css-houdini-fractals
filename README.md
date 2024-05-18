@@ -122,7 +122,7 @@ The type of HTML element and class name does not matter, rather height and width
 ## ❄️ Fractals
 
 * https://fractalfoundation.org/resources/what-are-fractals/
-* https://en.wikipedia.org/wiki/
+* https://en.wikipedia.org/wiki/Fractal
 * https://mathworld.wolfram.com/Fractal.html
 * https://www.wired.com/2010/09/fractal-patterns-in-nature/
 
